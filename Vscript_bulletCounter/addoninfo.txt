@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+     addonSteamAppID         "550"
+     addontitle              "bulletCounter VScript" 
+     addonversion            "1"
+     addonauthor             "Aslier"
+
+     addonDescription        "For MOD using this script to show the number of bullets in the magazine, take up ConVar cl_buy_favorite_quiet" 
+}
+ 

@@ -1,0 +1,6 @@
+ffmpeg -i  "FT.png" -vf rotate='-90*PI/180',scale=1024:1024 "01.jpg"
+ffmpeg -i  "BK.png" -vf rotate='90*PI/180',scale=1024:1024 "02.jpg"
+ffmpeg -i  "RT.png" -vf rotate='180*PI/180',scale=1024:1024 "03.jpg"
+ffmpeg -i  "LF.png" -vf scale=1024:1024 "04.jpg"
+ffmpeg -i  "UP.png" -vf rotate='-90*PI/180',scale=1024:1024 "05.jpg"
+ffmpeg -i  "DN.png" -vf rotate='-90*PI/180',scale=1024:1024 "06.jpg"

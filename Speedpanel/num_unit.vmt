@@ -1,0 +1,67 @@
+"VertexLitGeneric"
+{
+"$basetexture" "your\path\num"
+
+$translucent 1
+
+//用于显示个位数
+//=============不要编辑以下部分除非你知道自己在做什么=============//
+$speed 0
+$frame1 0
+$val2 10
+
+$fracinput 0
+$fracout 0
+$intinput 0
+$subin 0
+
+"Proxies"
+{
+	"PlayerSpeed"
+	{
+		scale	"1"     
+		resultVar 	"$speed"
+	}
+
+	"Divide"
+	{
+		srcVar1 "$speed"
+		srcVar2 "$val2"
+		resultVar "$fracinput"
+	}
+
+	"Int"
+	{
+		srcVar1 "$fracinput"
+		resultVar "$subin"
+	}
+
+	"Subtract"
+	{
+		srcVar1 "$fracinput"
+		srcVar2 "$subin"
+		resultVar "$fracout"
+	}
+
+	"Multiply"
+	{
+		srcVar1 "$fracout"
+		srcVar2 "$val2"
+		resultVar "$intinput"
+	}
+
+	"Int"
+	{
+		srcVar1 "$intinput"
+		resultVar "$frame1"
+	}
+
+	"Clamp"
+	{
+		min 0
+		max 10
+		srcVar1 "$frame1"
+		resultVar "$frame"
+	}
+}
+}

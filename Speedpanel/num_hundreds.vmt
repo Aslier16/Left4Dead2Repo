@@ -1,0 +1,50 @@
+"VertexLitGeneric"
+{
+"$basetexture" "your\path\num"
+
+$translucent 1
+
+//用于显示百位数
+//=============不要编辑以下部分除非你知道自己在做什么=============//
+$speed 0
+$d1 100
+$num1 0
+$frame1 0
+
+"Proxies" 
+    	{ 
+			"PlayerSpeed"
+			{
+				"scale" "1"
+				"resultVar" "$speed"
+			}
+
+			"Int"
+			{
+				"srcVar1" "speed"
+				"resultVar" "speed"
+			}
+
+
+			"Divide"
+			{
+				"srcVar1" "$speed"
+				"srcVar2" "$d1"
+				"resultVar" "$num1"
+			}
+			
+			"Int"
+			{
+				"srcVar1" "$num1"
+				"resultVar" "$frame1"
+			}
+
+			"Clamp"
+			{
+				"min" "0"
+				"max" "10"
+				"srcVar1" "$frame1"
+				"resultVar" "$frame"
+			}
+		}
+}

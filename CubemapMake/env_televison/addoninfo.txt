@@ -1,0 +1,7 @@
+"AddonInfo"
+{
+addontitle "envmap_tv"
+addonversion "alpha"
+addonauthor "Aslier"
+addonDescription "Replace tv"
+}

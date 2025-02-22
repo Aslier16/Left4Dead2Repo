@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "testStarry Glass"
+    addonversion           "1.0"
+    addonauthor            "Aslier"
+    addonDescription       "Watch the Milkyway in this piece of glass"
+}

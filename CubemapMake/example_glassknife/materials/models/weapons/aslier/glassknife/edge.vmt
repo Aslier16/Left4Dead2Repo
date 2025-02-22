@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+    $basetexture "models/weapons\aslier\glassknife\glass"
+
+    $color "[ 0.18 0.22 0.36 ]"
+    $envmap "models/weapons\aslier\glassknife\cube"
+    // $envmaptint "[ 0.25 0.25 0.25 ]"
+
+    $alpha .9
+    
+}

@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+$baseTexture "models\props_interiors/TVstatic"
+$envmap "models/weapons\aslier\glassknife\cube"
+$envmapmask "models\props_interiors\TVstatic_ref"
+$surfaceprop glass
+
+$envmaptint "[ 1 1 1 ]"
+$selfillum 1
+}

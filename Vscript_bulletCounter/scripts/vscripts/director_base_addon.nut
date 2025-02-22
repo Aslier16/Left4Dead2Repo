@@ -1,0 +1,1 @@
+IncludeScript( "Aslier_bulletCounter" );
